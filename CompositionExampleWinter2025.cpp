@@ -3,9 +3,18 @@
 
 #include <iostream>
 #include "Address.h"
+#include "Student.h"
 int main()
 {
-	Address ad1;
+	Address ad1("Taft", "48100", "3000", "Troy");
+
+	Student student1;
+
+	student1.setName("Jason");
+
+	student1.setStudentAddress(ad1);
+
+	cout<<student1.getStudentAddress().getZipCode();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
